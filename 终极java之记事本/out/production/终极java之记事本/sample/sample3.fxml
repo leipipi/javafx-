@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller3">
+   <children>
+      <Label layoutX="41.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" text="纸张" />
+      <Label layoutX="41.0" layoutY="126.0" prefHeight="25.0" prefWidth="58.0" text="方向" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="70.0" layoutX="41.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="420.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="123.0" layoutX="41.0" layoutY="158.0" stroke="BLACK" strokeType="INSIDE" width="135.0" />
+      <ChoiceBox fx:id="daxiao" layoutX="172.0" layoutY="62.0" prefHeight="30.0" prefWidth="249.0" />
+      <Label layoutX="107.0" layoutY="67.0" text="大小：" />
+      <RadioButton layoutX="50.0" layoutY="186.0" mnemonicParsing="false" selected="true" text="横向">
+         <toggleGroup>
+            <ToggleGroup fx:id="fangxiang" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="50.0" layoutY="226.0" mnemonicParsing="false" text="纵向" toggleGroup="$fangxiang" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="123.0" layoutX="190.0" layoutY="158.0" stroke="BLACK" strokeType="INSIDE" width="272.0" />
+      <Label layoutX="190.0" layoutY="129.0" text="页边距(毫米)" />
+      <Label layoutX="213.0" layoutY="186.0" text="左(L):" />
+      <TextField layoutX="262.0" layoutY="181.0" prefHeight="30.0" prefWidth="57.0" text="20" />
+      <Label layoutX="214.0" layoutY="236.0" text="上(T):" />
+      <Label layoutX="339.0" layoutY="236.0" text="下(B)：" />
+      <Label layoutX="339.0" layoutY="186.0" text="右(R):" />
+      <TextField layoutX="263.0" layoutY="231.0" prefHeight="30.0" prefWidth="57.0" text="25" />
+      <TextField layoutX="389.0" layoutY="181.0" prefHeight="30.0" prefWidth="57.0" text="20" />
+      <TextField layoutX="389.0" layoutY="231.0" prefHeight="30.0" prefWidth="57.0" text="25" />
+      <Label layoutX="41.0" layoutY="314.0" text="页眉(H):" />
+      <Label layoutX="41.0" layoutY="364.0" text="页脚(F):" />
+      <TextField layoutX="124.0" layoutY="309.0" prefHeight="30.0" prefWidth="339.0" />
+      <TextField layoutX="124.0" layoutY="359.0" prefHeight="30.0" prefWidth="339.0" />
+      <Button layoutX="305.0" layoutY="412.0" mnemonicParsing="false" onAction="#queding" prefHeight="30.0" prefWidth="77.0" text="确定" />
+      <Button layoutX="394.0" layoutY="412.0" mnemonicParsing="false" onAction="#quxiao" prefHeight="30.0" prefWidth="77.0" text="取消" />
+   </children>
+</Pane>
